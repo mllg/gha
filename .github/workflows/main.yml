@@ -9,5 +9,5 @@ jobs:
     - name: checkout 
       uses: actions/checkout@v2
     - name: setup_r
-      uses: mllg/setup_r_lib
+      uses: mllg/setup_r_lib@master
 
