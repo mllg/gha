@@ -8,24 +8,6 @@ jobs:
     steps:
     - name: checkout 
       uses: actions/checkout@v2
+    - name: setup_r
+      uses: mllg/setup_r_lib
 
-    - name: create file 
-      id: createfile 
-      run: touch bazbaz
-    - name: Hello world action step
-      id: hello
-      uses: actions/hello-world-docker-action@v1
-      with:
-        who-to-greet: 'Mona the Octocat'
-    - name: Get pwd
-      id: pwd 
-      run: pwd
-    - name: touch
-      id: touch 
-      run: touch /home/runner/work/_temp/_github_home/foo
-    - name: home 
-      id: home 
-      run: echo $HOME
-    - name: find 
-      id: find
-      run: find $HOME
