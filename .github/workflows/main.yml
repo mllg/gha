@@ -11,3 +11,11 @@ jobs:
         uses: actions/checkout@v2
       - name: which 
         run: which R
+      - name: createfile 
+        run: touch foobar
+      - name: Cache files
+        id: cachefiles
+        uses: actions/cache@v2
+        with:
+          path: foobar
+          key: foobar
