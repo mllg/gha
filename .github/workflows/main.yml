@@ -3,11 +3,9 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
+    container: rstudio/r-base:4.0-focal
     name: A job to say hello
 
     steps:
-    - name: checkout 
-      uses: actions/checkout@v2
-    - name: setup_r
-      uses: mllg/setup_r_lib@main
-
+      - name: which 
+        run: which R
