@@ -13,3 +13,6 @@ jobs:
     - name: Get pwd
       id: pwd 
       run: pwd
+    - name: touch
+      id: touch 
+      run: touch /github/home/foo
