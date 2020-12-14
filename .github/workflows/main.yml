@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    container: rstudio/r-base:4.0-focal
+    container: rocker/r-rspm:focal
     name: A job to say hello
 
     steps:
