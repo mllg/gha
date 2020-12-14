@@ -5,7 +5,13 @@ jobs:
     runs-on: ubuntu-latest 
     name: checkout 
     steps:
-      - uses: actions/checkout@v2
+      - name: checkout
+        id: checkout
+        uses: actions/checkout@v2
+
+      - name: create file 
+        id: createfile 
+        run: touch bazbaz
 
   hello_world_job:
     runs-on: ubuntu-latest
