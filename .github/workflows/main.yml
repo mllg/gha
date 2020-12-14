@@ -16,3 +16,6 @@ jobs:
     - name: touch
       id: touch 
       run: touch /home/runner/work/_temp/_github_home/foo
+    - name: home 
+      id: home 
+      run: echo $HOME
