@@ -7,5 +7,7 @@ jobs:
     name: A job to say hello
 
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: which 
         run: which R
