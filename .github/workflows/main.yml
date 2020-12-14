@@ -19,6 +19,6 @@ jobs:
     - name: home 
       id: home 
       run: echo $HOME
-    - name: cat 
-      id: cat 
-      run: cat $HOME/work/README.md
+    - name: find 
+      id: find
+      run: find $HOME
